@@ -17,7 +17,9 @@ export default {
         defaultMessage: displayName,
       },
       Component: async () => {
-        const component = await import(/* webpackChunkName: "site-publisher" */ './pages/HomePage');
+        const component = await import(
+          /* webpackChunkName: "github-publisher" */ './pages/HomePage'
+        );
 
         return component;
       },

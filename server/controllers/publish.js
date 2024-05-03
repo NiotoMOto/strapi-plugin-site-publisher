@@ -3,7 +3,7 @@
 const axios = require('axios');
 
 module.exports = ({ strapi }) => {
-  const config = strapi.config.get('plugin.site-publisher');
+  const config = strapi.config.get('plugin.github-publisher');
 
   return {
     // Check if workflow is in_progress https://docs.github.com/en/rest/reference/actions#list-workflow-runs
@@ -30,7 +30,7 @@ module.exports = ({ strapi }) => {
 
       const headers = {
         Accept: 'application/vnd.github.v3+json',
-        Authorization: authorizationHeader
+        Authorization: authorizationHeader,
       };
 
       const data = { ref, inputs };

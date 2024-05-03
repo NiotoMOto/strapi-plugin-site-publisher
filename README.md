@@ -21,7 +21,7 @@ This plugin also checks to see if a build is already in progress and not allow t
 Install this plugin with yarn:
 
 ```bash
-yarn add strapi-plugin-site-publisher
+yarn add strapi-plugin-github-publisher
 ```
 
 ## Configuration
@@ -30,7 +30,7 @@ Generate a config file at `config/plugins.js` or `config/development/plugins.js`
 
 ```javascript
 module.exports = ({ env }) => ({
-  'site-publisher': {
+  'github-publisherr': {
     config: {
       owner: 'username', // The Github organisation or user
       repo: 'reponame', // The name of the repository

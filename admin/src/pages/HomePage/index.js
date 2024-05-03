@@ -8,6 +8,7 @@ import { Main } from '@strapi/design-system/Main';
 import { Typography } from '@strapi/design-system/Typography';
 import Upload from '@strapi/icons/Upload';
 import { LoadingIndicatorPage, request } from '@strapi/helper-plugin';
+import axios from 'axios';
 
 import { useIntl } from 'react-intl';
 import { getTrad } from '../../utils';
@@ -22,7 +23,7 @@ const HomePage = () => {
   const [ready, setReady] = useState(false);
   const [busy, setBusy] = useState(false);
   const timeoutRef = useRef();
-
+  console.log('pluginId', pluginId)
   const checkBusy = useCallback(async () => {
     const { busy } = await request(`/${pluginId}/check`, { method: 'GET' });
     setBusy(busy);

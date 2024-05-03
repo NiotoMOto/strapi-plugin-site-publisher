@@ -64,7 +64,7 @@
   },
   "strapi": {
     "displayName": "Publish site",
-    "name": "site-publisher",
+    "name": "github-publisher",
     "description": "Publish your site by triggering a Github workflow.",
     "kind": "plugin"
   }
