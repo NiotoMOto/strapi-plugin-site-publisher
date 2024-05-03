@@ -1,5 +1,5 @@
 {
-  "name": "strapi-plugin-github-publisher",
+  "name": "strapi-plugin-github-workflow",
   "version": "0.1.0",
   "description": "A plugin to easily publish your site from Strapi.",
   "repository": {
@@ -64,7 +64,7 @@
   },
   "strapi": {
     "displayName": "Publish site",
-    "name": "github-publisher",
+    "name": "github-workflow",
     "description": "Publish your site by triggering a Github workflow.",
     "kind": "plugin"
   }

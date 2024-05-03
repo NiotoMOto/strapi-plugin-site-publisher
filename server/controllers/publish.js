@@ -3,7 +3,7 @@
 const axios = require('axios');
 
 module.exports = ({ strapi }) => {
-  const config = strapi.config.get('plugin.github-publisher');
+  const config = strapi.config.get('plugin.github-workflow');
 
   return {
     // Check if workflow is in_progress https://docs.github.com/en/rest/reference/actions#list-workflow-runs

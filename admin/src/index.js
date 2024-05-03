@@ -18,7 +18,7 @@ export default {
       },
       Component: async () => {
         const component = await import(
-          /* webpackChunkName: "github-publisher" */ './pages/HomePage'
+          /* webpackChunkName: "github-workflow" */ './pages/HomePage'
         );
 
         return component;
