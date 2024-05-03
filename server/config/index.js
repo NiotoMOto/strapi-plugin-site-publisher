@@ -5,7 +5,7 @@ module.exports = {
     owner: '',
     repo: '',
     workflow_id: '',
-    token: '',
+    authorizationHeader: '',
     branch: '',
     inputs: {},
   }),
@@ -19,8 +19,8 @@ module.exports = {
     if (!config.workflow_id) {
       throw new Error('workflow_id is required');
     }
-    if (!config.token) {
-      throw new Error('token is required');
+    if (!config.authorizationHeader) {
+      throw new Error('authorizationHeader is required');
     }
     if (!config.branch) {
       throw new Error('branch is required');

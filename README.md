@@ -35,7 +35,7 @@ module.exports = ({ env }) => ({
       owner: 'username', // The Github organisation or user
       repo: 'reponame', // The name of the repository
       workflow_id: 'rebuild.yml', // The workflow_id or filename
-      token: env('GITHUB_TOKEN'), // The GitHub personal access token with access to trigger workflows and view build status
+      authorizationHeader: env('GITHUB_AUTHORIZATION_HEADER'), // The GitHub personal access token with access to trigger workflows and view build status
       branch: 'master', // The branch the workflow should be triggered on
       inputs: {
         // Optional inputs to pass through to the GitHub workflow
